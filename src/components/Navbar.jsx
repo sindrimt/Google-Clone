@@ -17,7 +17,7 @@ export const Navbar = ({ darkTheme, setDarkTheme }) => {
 
     if (title.length === 0) return;
 
-    getResults(`/search/q=${title}&num=100`);
+    getResults(`/search/q=${title}&num=30`);
   };
 
   return (

@@ -10,7 +10,7 @@ export const Results = () => {
   const location = useLocation();
 
   useEffect(() => {
-    getResults("/search/q=elon+musk&num=100");
+    getResults("/search/q=elon+musk&num=30");
   }, []);
 
   if (isLoading) return <Loading />;
