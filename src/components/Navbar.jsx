@@ -15,7 +15,7 @@ export const Navbar = ({ darkTheme, setDarkTheme }) => {
     e.preventDefault();
     console.log(`Title length: ${title.length}`);
 
-    if (title.length == 0) return;
+    if (title.length === 0) return;
 
     getResults(`/search/q=${title}&num=100`);
   };
