@@ -1,2 +1,2 @@
 yeet<br>
-Domain: https://epic-google-clone-project.netlify.app
+Domain: https://glone-googleclone.netlify.app

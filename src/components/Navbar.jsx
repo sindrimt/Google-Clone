@@ -8,7 +8,8 @@ import { HiMoon } from "react-icons/hi";
 import { CgSun } from "react-icons/cg";
 
 export const Navbar = ({ darkTheme, setDarkTheme }) => {
-  const { results, isLoading, getResults, searchTerm } = useResultContext();
+  const { results, isLoading, getResults, searchTerm, setSearchTerm } =
+    useResultContext();
   const [title, setTitle] = useState("");
 
   const handleSubmit = (e) => {
@@ -21,7 +22,7 @@ export const Navbar = ({ darkTheme, setDarkTheme }) => {
   };
 
   return (
-    <div className="p-5 pb-7 flex flex-wrap sm:justify-between justify-center items-center border-b dark:border-darkBlue border-whiteIsh">
+    <div className="p-5 pb-0 flex flex-wrap sm:justify-between justify-center items-center border-b dark:border-darkBlue border-whiteIsh">
       <div className="flex justify-between items-center space-x-5 w-screen">
         <Link to="/">
           <p className="text-2xl bg-blue-500 font-bold text-white py-1 px-2 rounded dark:bg-darkBlue dark:text-blackIsh">
